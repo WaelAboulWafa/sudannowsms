@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prf="http://www.wapforum.org/UAPROF/ccppschema-20000405#">
+  <rdf:Description ID="Profile">
+    <prf:component>
+      <rdf:Description ID="HardwarePlatform">
+        <prf:ScreenSize>176x144</prf:ScreenSize>
+        <prf:Model>Nokia7650</prf:Model>
+        <prf:ColorCapable>Yes</prf:ColorCapable>
+      </rdf:Description>
+    </prf:component>
+    <prf:component>
+      <rdf:Description ID="MMSCharacteristics">
+        <prf:MmsMaxMessageSize>102400</prf:MmsMaxMessageSize>
+        <prf:MmsMaxImageResolution>176x144</prf:MmsMaxImageResolution>  
+        <prf:MmsCcppAccept>
+          <rdf:Bag>
+            <rdf:li>image/jpeg</rdf:li>
+            <rdf:li>image/gif</rdf:li>
+            <rdf:li>image/png</rdf:li>
+            <rdf:li>image/vnd.wap.wbmp</rdf:li>
+            <rdf:li>image/vnd.nok-wallpaper</rdf:li>
+            <rdf:li>image/vnd.nok-oplogo-color</rdf:li>
+            <rdf:li>image/vnd.nok-oplogo</rdf:li>
+            <rdf:li>audio/amr</rdf:li>
+            <rdf:li>audio/x-amr</rdf:li>
+            <rdf:li>audio/midi</rdf:li>
+            <rdf:li>audio/x-midi</rdf:li>
+            <rdf:li>audio/sp-midi</rdf:li>
+            <rdf:li>audio/x-beatnik-rmf</rdf:li>
+            <rdf:li>audio/rmf</rdf:li>
+            <rdf:li>audio/x-rmf</rdf:li>
+            <rdf:li>text/plain</rdf:li>
+            <rdf:li>text/x-vcard</rdf:li>
+            <rdf:li>text/x-vcalendar</rdf:li>
+            <rdf:li>application/vnd.nokia.ringing-tone</rdf:li>
+            <rdf:li>application/vnd.symbian.install</rdf:li>
+            <rdf:li>application/java-archive</rdf:li>
+            <rdf:li>application/x-java-archive</rdf:li>
+            <rdf:li>application/vnd.wap.wmlc</rdf:li>
+            <rdf:li>application/vnd.wap.wmlscriptc</rdf:li>
+            <rdf:li>application/vnd.wap.wbxml</rdf:li>
+            <rdf:li>text/vnd.sun.j2me.app-descriptor</rdf:li>
+            <rdf:li>application/smil</rdf:li>
+            <rdf:li>video/3gpp</rdf:li>
+          </rdf:Bag>
+        </prf:MmsCcppAccept>
+        <prf:MmsCcppAccept-Charset>
+          <rdf:Bag>
+            <rdf:li>US-ASCII</rdf:li>
+            <rdf:li>ISO-8859-1</rdf:li>
+            <rdf:li>UTF-8</rdf:li>
+            <rdf:li>ISO-10646-UCS-2</rdf:li>
+          </rdf:Bag>
+        </prf:MmsCcppAccept-Charset>
+        <prf:MmsVersion>1.0</prf:MmsVersion>    
+      </rdf:Description>
+    </prf:component>
+  </rdf:Description>
+</RDF>

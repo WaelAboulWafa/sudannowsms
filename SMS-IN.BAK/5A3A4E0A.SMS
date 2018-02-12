@@ -1,0 +1,7 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249990999003
+PhoneNumber=6613
+dcs=8
+Data=062A0633062A
+Binary=1

@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249990903575
+PhoneNumber=6631
+Data=Getar alshoog
+Binary=0

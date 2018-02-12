@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249115628275
+PhoneNumber=+2491650
+Data=Nokia.mobi\nhttp://go.store.ovi.mobi/entry/van/video/X2-02
+Binary=0

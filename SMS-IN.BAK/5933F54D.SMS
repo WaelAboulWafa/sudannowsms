@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249129259079
+PhoneNumber=+2491653
+Data=No. 1    Omer Mohamed Ahmed 
+Binary=0

@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249117058046
+PhoneNumber=1653
+Data=You have received 4.80 SDG from 0909379296. Your new balance is 204.41 SDG.service fee is 0.20
+Binary=0

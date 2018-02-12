@@ -1,0 +1,7 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249997027164
+PhoneNumber=1421
+dcs=8
+Data=200F0031003400320031
+Binary=1

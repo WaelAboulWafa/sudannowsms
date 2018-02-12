@@ -1,0 +1,87 @@
+MMSUSER
+=======
+
+The MMSUSER utility provides command-line support for adding, deleting and modifying
+MMSC user definitions.
+
+The MMSUSER utility also provides reporting functionality, for exporting a list of
+defined users, and for reporting message quota information on the number of messages
+sent by defined accounts.
+
+NOTE:  MMSUSER must be executed from the gateway installation directory.  Do not move or copy
+MMSUSER to another directory.
+
+The MMSUSER command operates in 5 different "modes", depending on command line parameters.
+
+The first command line parameter defines the "mode", as described below.
+
+==
+Export user list to file:
+
+MMSUSER -export filename
+
+MMSUSER will export a list of defined users to the specified filename.  The format for
+the export file is as follows:
+
+M,PhoneNumber,Alias,Password,FullName,MaxMsgsPerDay,MaxMsgsPerMonth
+
+==
+Import users from file:
+
+MMSUSER -import filename
+
+MMSUSER will read commands from the specified filename to add, modify or delete users.
+
+The format for the import file is as follows:
+
+C,PhoneNumber,Alias,Password,FullName,MaxMsgsPerDay,MaxMsgsPerMonth
+
+C is an import command, which must be M (modify), A (add), or D (delete).
+
+The M (modify) command can be used to Add a new user or modify an existing user.
+
+The A (add) command can only be used to add a new user.
+
+The D (delete) command requires only the PhoneNumber as a parameter.
+
+When processing import commands, MMSUSER will echo the status of the command to the console,
+using one line per command in the following format:
+
+C,PhoneNumber,Status
+
+Status will be either OK or FAILED.  If status is FAILED, FAILED will be followed by
+additional descriptive information regarding the nature of the failure.
+
+==
+Quota Report:
+
+MMSUSER -quotareport filename
+
+MMSUSER will report message quota information for all users.
+
+The format of this file is:
+
+--- User PhoneNumber (alias) ---
+Month Day, Year -- number messages
+   TOTAL - Month Year -- number messages
+
+
+==
+Test if Phone Number defined:
+
+MMSUSER -exist PhoneNumber
+
+Command returns 0 if the phone number is defined to the MMSC, non-zero if the phone number
+is not defined.
+
+==
+Test if Alias is defined:
+
+MMSUSER -existalias Alias
+
+Command returns 0 if the alias is defined to the MMSC, non-zero if the alias is not defined.
+
+
+
+
+

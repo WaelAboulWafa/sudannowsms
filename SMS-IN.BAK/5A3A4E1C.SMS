@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249128274971
+PhoneNumber=1666
+Data=The number 122883936 transferred 2.00 SDG for you on 24/01/2018.Your balance is 1.84 SDG now.
+Binary=0

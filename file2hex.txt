@@ -1,0 +1,7 @@
+FILE2HEX
+
+This program reads a file specified on the command line and outputs a hex
+string representation of the file.
+
+This is useful for converting ring tones and bitmaps to a format that can
+be transmitted via SMS.

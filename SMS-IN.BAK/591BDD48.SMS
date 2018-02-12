@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249123513335
+PhoneNumber=+2491653
+Data= to recharge your account.
+Binary=0

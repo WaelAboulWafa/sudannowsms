@@ -1,0 +1,8 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249925919504
+PhoneNumber=6631
+pid=32
+dcs=8
+Data=
+Binary=1

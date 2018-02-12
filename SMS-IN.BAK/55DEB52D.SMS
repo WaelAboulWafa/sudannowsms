@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249129492178
+PhoneNumber=+2491666
+Data=Your account does not have a sufficient balance for calls to the dialed number. Please recharge your account first. Dial  Recharge Number :-):-(
+Binary=0

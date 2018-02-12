@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249924072578
+PhoneNumber=1623
+Data=opera
+Binary=0

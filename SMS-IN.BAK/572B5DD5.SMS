@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249920729183
+PhoneNumber=1421
+Data=https://mobile.facebook.com/?refsrc=http%3A%2F%2Fm.facebook.com%2F&_rdr
+Binary=0

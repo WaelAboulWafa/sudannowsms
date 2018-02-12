@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249922284079
+PhoneNumber=1421
+Data=Your account does not have a sufficient balance for calls to the dialed number. Please recharge your account first. 
+Binary=0

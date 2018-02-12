@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249124007307
+PhoneNumber=1421
+Data=Mobile anti-theft recognized SIM card change
+Binary=0

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+<HEAD><TITLE>MMSC Define Users</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFEE LINK=#0000FF VLINK=#0000FF ALINK=#0000FF>
+<center>
+<FORM METHOD=post ACTION=@@PostURL@@>
+<!@@BeginIfError@@>
+<FONT SIZE="+2" COLOR="red">@@ErrorMessage@@</FONT>
+<!@@EndIfError@@>
+<TABLE border=1 cellpadding=3 bgcolor=9DB9C8>
+
+<tr>
+<td colspan=2 bgcolor=#000080 align=left valign=top>
+<a href=@@QuitURL@@><img src="/ADMIN/close.gif" width=20 height=21 Align=right border=0 Alt="Close"></a>
+<font color=White><b>&nbsp;MMSC Define Users</b></font>
+</td>
+</tr>
+
+<TR>
+  <td align=left>
+<!@@BeginNoCrlf@@>
+     <SELECT Name="UserGroup" SIZE=1 cols=20>
+       <OPTION VALUE="@@UserGroupTop@@">@@UserGroupText@@
+     </SELECT>
+<!@@EndNoCrlf@@>
+  </td>
+  <td valign=top align=right>
+     <INPUT NAME="SelectUserGroup" TYPE="SUBMIT" Value="&nbsp;Select&nbsp;"><br>
+ </td>
+</tr>
+
+<TR>
+  <td align=left>
+<!@@BeginNoCrlf@@>
+     <SELECT MULTIPLE Name="DefinedUsers" SIZE=18 cols=20>
+       <OPTION>@@DefinedUsers@@
+       <OPTION>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     </SELECT>
+<!@@EndNoCrlf@@>
+  </td>
+  <td valign=top align=right>
+     <INPUT NAME="CreateUser" TYPE="SUBMIT" Value="&nbsp;Create&nbsp;"><br>
+     &nbsp;<br>
+     <INPUT NAME="EditUser" TYPE="SUBMIT" Value="&nbsp;Modify&nbsp;"><br>
+     &nbsp;<br>
+     <INPUT NAME="DeleteUser" TYPE="SUBMIT" Value="&nbsp;Delete&nbsp;">
+  </td>
+</tr>
+
+<!------------------------------------------->
+<tr>
+  <td align=left>
+     <INPUT NAME="FindUserText" TYPE="INPUT" Value="" SIZE="50">
+  </td>
+  <td valign=top align=center>
+     <INPUT NAME="FindUser" TYPE="SUBMIT" Value="&nbsp;Find&nbsp;">
+  </td>
+</tr>
+<tr>
+  <TD colspan=2 align=center valign=middle>
+     <a href=@@QuitURL@@><img src="/ADMIN/ok.gif" border=0 Alt="Ok"></a>
+  </td>
+</tr>
+</table>
+<INPUT NAME="Dummy" TYPE="hidden" VALUE="">
+</FORM>
+</center>
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249928242069
+PhoneNumber=1421
+Data=http://m.eskimi.com/legal/terms?§cp=home&§cf=footer&§tm=1506248748
+Binary=0

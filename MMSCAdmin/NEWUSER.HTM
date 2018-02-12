@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+<HEAD><TITLE>MMSC Create/Modify User</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setDefaultMessageLimits() {
+   document.forms[0].MessageLimitPerDay.value="@@DefaultMessageLimitPerDay@@";
+   document.forms[0].MessageLimitPerMonth.value="@@DefaultMessageLimitPerMonth@@";
+}
+</SCRIPT>
+</HEAD>
+<BODY bgcolor=#FFFFEE LINK=#0000FF VLINK=#0000FF ALINK=#0000FF>
+<center>
+<FORM METHOD=post ACTION=@@PostURL@@>
+<!@@BeginIfError@@>
+<FONT SIZE="+2" COLOR="red">@@ErrorMessage@@</FONT>
+<!@@EndIfError@@>
+<INPUT NAME="OldPhoneNumber" TYPE="HIDDEN" Value="@@OldPhoneNumber@@">
+<TABLE border=1 cellpadding=3 bgcolor=9DB9C8>
+
+   <tr>
+  <td colspan=2 bgcolor=navy align=left valign=top>
+    <table cellpadding=0 width=100%>
+      <tr>
+	<td align=left>
+	  <font color=white><b>&nbsp;MMSC Create/Modify User</b></font>
+	</td>
+	<td align=right>
+	  <INPUT NAME="EditUserCancel" TYPE="image" src="/ADMIN/close.gif" border=0 value="Cancel" Alt="Cancel" align=right>
+	</td>
+      </tr>
+    </table>
+  </td>
+   </tr>
+
+<td colspan=2>
+<table>
+<TR>
+  <td align=left>
+    <TR>
+      <td align=right>
+      Phone Number:
+      </td>
+       <td align=left>
+         <INPUT NAME="NewPhoneNumber" TYPE="TEXT" SIZE="60" Value="@@NewPhoneNumber@@">
+       </td>
+    </TR>
+    <TR>
+      <td align=right>
+      Alias:
+      </td>
+       <td align=left>
+         <INPUT NAME="Alias" TYPE="TEXT" SIZE="60" Value="@@Alias@@">
+       </td>
+    </TR>
+    <TR>
+      <td align=right>
+      Password:
+      </td>
+       <td align=left>
+         <INPUT NAME="Password" TYPE="PASSWORD" SIZE="60" Value="@@Password@@">
+       </td>
+    </TR>
+    <TR>
+      <td align=right>
+      Confirm Password:
+      </td>
+       <td align=left>
+         <INPUT NAME="ConfirmPassword" TYPE="PASSWORD" SIZE="60" Value="@@Password@@">
+       </td>
+    </TR>
+    <TR>
+      <td align=right>
+      Full Name:
+      </td>
+       <td align=left>
+         <INPUT NAME="FullName" TYPE="TEXT" SIZE="60" Value="@@FullName@@">
+       </td>
+    </TR>
+<!@@BeginIfMessageLimitEnabled@@>
+    <TR>
+      <td align=left colspan=2>
+         <INPUT NAME="MessageLimitDefault" TYPE="CHECKBOX" @@CheckedIfMessageLimitDefault@@ onclick="setDefaultMessageLimits()">
+         Use Default Message Sending Limits for this User
+      </td>
+    </TR>
+    <TR>
+      <td align=right>
+      Max Messages Per Day:
+      </td>
+       <td align=left>
+         <INPUT NAME="MessageLimitPerDay" TYPE="TEXT" SIZE="6" Value="@@MessageLimitPerDay@@">
+       </td>
+    </TR>
+    <TR>
+      <td align=right>
+      Max Messages Per Month:
+      </td>
+       <td align=left>
+         <INPUT NAME="MessageLimitPerMonth" TYPE="TEXT" SIZE="6" Value="@@MessageLimitPerMonth@@">
+       </td>
+    </TR>
+<!@@EndIfMessageLimitEnabled@@>
+  </td>
+</tr>
+<tr>
+  <TD colspan=2 align=center valign=middle>
+    <INPUT src="/ADMIN/ok.gif" NAME="SaveUser" TYPE="IMAGE" VALUE="Yes" valign=top border=0 Alt="Save User">
+  </td>
+</tr>
+<!@@BeginIfUserStats@@>
+<tr>
+  <TD colspan=2 align=center valign=middle>
+    <hr>
+    <b>User Account Statistics:</b>
+  </TD>
+</tr>
+<tr>
+  <TD colspan=2 align=center valign=middle>
+     <SELECT MULTIPLE Name="UserStatsEntry" SIZE=8 cols=20>
+       <OPTION>@@UserStatsEntry@@
+       <OPTION>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     </SELECT>
+  </td>
+</tr>
+<!@@EndIfUserStats@@>
+</table>
+</td>
+
+</table>
+<INPUT NAME="Dummy" TYPE="hidden" VALUE="">
+</FORM>
+</center>
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249122665574
+PhoneNumber=+2491653
+Data=2. Elshakh Elnazir Elkarori
+Binary=0

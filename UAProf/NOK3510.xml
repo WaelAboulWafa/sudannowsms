@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prf="http://www.wapforum.org/UAPROF/ccppschema-20000405#">
+  <rdf:Description ID="Profile">
+    <prf:component>
+      <rdf:Description ID="HardwarePlatform">
+        <prf:ScreenSize>96x65</prf:ScreenSize>
+        <prf:Model>Nokia3510</prf:Model>
+        <prf:ColorCapable>No</prf:ColorCapable>
+      </rdf:Description>
+    </prf:component>
+    <prf:component>
+      <rdf:Description ID="MMSCharacteristics">
+        <prf:MmsMaxMessageSize>30000</prf:MmsMaxMessageSize>
+        <prf:MmsMaxImageResolution>96x65</prf:MmsMaxImageResolution>  
+        <prf:MmsCcppAccept>
+          <rdf:Bag>
+            <rdf:li>image/gif</rdf:li>
+            <rdf:li>image/vnd.wap.wbmp</rdf:li>
+            <rdf:li>audio/midi</rdf:li>
+            <rdf:li>audio/mid</rdf:li>
+            <rdf:li>audio/x-midi</rdf:li>
+            <rdf:li>audio/x-mid</rdf:li>
+            <rdf:li>text/plain</rdf:li>
+            <rdf:li>application/vnd.nokia.ringing-tone</rdf:li>
+          </rdf:Bag>
+        </prf:MmsCcppAccept>
+        <prf:MmsCcppAccept-Charset>
+          <rdf:Bag>
+            <rdf:li>US-ASCII</rdf:li>
+            <rdf:li>ISO-8859-1</rdf:li>
+            <rdf:li>UTF-8</rdf:li>
+            <rdf:li>ISO-10646-UCS-2</rdf:li>
+          </rdf:Bag>
+        </prf:MmsCcppAccept-Charset>
+        <prf:MmsVersion>1.0</prf:MmsVersion>    
+      </rdf:Description>
+    </prf:component>
+  </rdf:Description>
+</RDF>

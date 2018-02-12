@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+<HEAD><TITLE>MMSC Web Administration</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFEE LINK=#0000FF VLINK=#0000FF ALINK=#0000FF>
+<center>
+<FORM METHOD=post ACTION="/ADMIN">
+<TABLE border=1 cellpadding=3 bgcolor=9DB9C8>
+
+   <tr>
+  <td colspan=2 bgcolor=navy align=left valign=top>
+    <table cellpadding=0 width=100%>
+      <tr>
+	<td align=left>
+	  <font color=white><b>&nbsp;MMSC Web Administration</b></font>
+	</td>
+	<td align=right>
+	  <INPUT NAME="AdminExit" TYPE="image" src="/ADMIN/close.gif" border=0 value="Logout" Alt="Logout" align=right>
+	</td>
+      </tr>
+    </table>
+  </td>
+   </tr>
+
+
+<TR>
+  <td align=center>
+     <SELECT Name="AdminOption" SIZE=10>
+       <OPTION SELECTED VALUE="Users">User Account Administration
+     </SELECT>
+  </td>
+</tr>
+<tr>
+  <td valign=top align=center>
+     <INPUT NAME="AdminSelectOption" TYPE="SUBMIT" Value="&nbsp;OK&nbsp;">
+     &nbsp;&nbsp;
+     <INPUT NAME="AdminExit" TYPE="SUBMIT" Value="&nbsp;Exit&nbsp;">
+  </td>
+</tr>
+
+</table>
+<INPUT NAME="Dummy" TYPE="hidden" VALUE="">
+</FORM>
+</center>
+</BODY>
+</HTML>

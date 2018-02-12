@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249119046474
+PhoneNumber=+2491668
+Data=*2
+Binary=0

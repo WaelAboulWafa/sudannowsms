@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249990812440
+PhoneNumber=6631
+Data=I'm busy now,call you later.
+Binary=0

@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249115410557
+PhoneNumber=+2491421
+Data=ABDORHMN HARON
+Binary=0

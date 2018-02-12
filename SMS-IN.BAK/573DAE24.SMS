@@ -1,0 +1,6 @@
+[SMS-IN]
+ModemName=SMPP - 196.1.219.193:5020
+Sender=+249113355799
+PhoneNumber=+2491421
+Data=Awad Alkreem Abdalla\nSorry my phone doesn't write arabic\nREHAM GIBREEL
+Binary=0

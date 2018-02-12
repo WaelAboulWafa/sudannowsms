@@ -1,0 +1,7 @@
+[SMS-IN]
+ModemName=SMPP - 196.29.171.6:6200
+Sender=+249925630094
+PhoneNumber=1623
+dcs=8
+Data=
+Binary=1

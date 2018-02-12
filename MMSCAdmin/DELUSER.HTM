@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+<HEAD><TITLE>MMSC Confirm Delete User</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFEE LINK=#0000FF VLINK=#0000FF ALINK=#0000FF>
+<center>
+<FORM METHOD=post ACTION=@@PostURL@@>
+<!@@BeginIfError@@>
+<FONT SIZE="+2" COLOR="red">@@ErrorMessage@@</FONT>
+<!@@EndIfError@@>
+<INPUT TYPE="HIDDEN" NAME="UsersToDelete" Value="@@UsersToDelete@@">
+<INPUT TYPE="HIDDEN" NAME="UserGroup" Value="@@UserGroupTop@@">
+<TABLE border=1 cellpadding=3 bgcolor=9DB9C8>
+
+<tr>
+<td colspan=2 bgcolor=#000080 align=left valign=top>
+<a href=@@QuitURL@@><img src="/ADMIN/close.gif" width=20 height=21 Align=right border=0 Alt="Close"></a>
+<font color=White><b>&nbsp;Confirm Delete User</b></font>
+</td>
+</tr>
+
+<tr>
+	<td colspan=2 align=center valign=top>
+<b>The following user(s) will be deleted:</b><br>
+     <SELECT MULTIPLE Name="UsersToDeleteList" SIZE=18 cols=20>
+       <OPTION>@@UsersToDelete@@
+       <OPTION>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     </SELECT>
+
+</td>
+</tr>
+
+<!------------------------------------------->
+<tr>
+  <TD colspan=2 align=center valign=middle>
+    <INPUT src="/ADMIN/ok.gif" NAME="ConfirmDeleteUser" TYPE="IMAGE" VALUE="Yes" valign=top border=0 Alt="Ok">
+    <a href=@@QuitURL@@><img src="/ADMIN/cancel.gif" border=0 Alt="Cancel"></a>
+  </td>
+</tr>
+</table>
+<INPUT NAME="Dummy" TYPE="hidden" VALUE="">
+</FORM>
+</center>
+</BODY>
+</HTML>
